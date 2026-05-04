@@ -1,0 +1,186 @@
+/* ==========================
+   RESET
+========================== */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ==========================
+   NAVBAR
+========================== */
+.navbar{
+    background-color: #28a745 !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+/* LOGO */
+.logo-img{
+    width: 45px;
+}
+
+
+/* ==========================
+   HERO
+========================== */
+.hero{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    animation: aparecer 1s ease;
+}
+
+/* animación de entrada */
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* imagen del hero con efecto hover */
+.hero img{
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/* ==========================
+   BOTONES
+========================== */
+.btn-perso{
+    background-color: #28a745;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-perso:hover{
+    background-color: #218838;
+}
+
+
+/* ==========================
+   CARDS / PRODUCTOS
+========================== */
+.catalogo-card{
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.catalogo-card img{
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* ==========================
+   CARRITO
+========================== */
+.carrito-boton{
+    font-size: 1.2rem;
+}
+
+
+/* ==========================
+   CONTADOR PRODUCTOS
+========================== */
+.contador-cantidad button{
+    padding: 3px 8px;
+    margin: 2px;
+}
+
+
+/* ==========================
+   OCULTO
+========================== */
+.oculto{
+    display: none;
+}
+
+
+/* ==========================
+   ANIMACIONES GENERALES
+========================== */
+.animacion{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.animacion.activo{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==========================
+   REDES SOCIALES
+========================== */
+.redes a{
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.redes a:hover{
+    color: #28a745;
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+footer{
+    border-top: 1px solid #ddd;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    margin-bottom: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: #28a745;
+}
+
+/* versión final de enlaces (más suave) */
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #d4ffd4;
+}
