@@ -79,7 +79,7 @@ productos.forEach(prod => {
 
 
 // ==========================
-// BOTÓN VACIAR CARRITO (MEJORADO)
+// BOTÓN VACIAR CARRITO 
 // ==========================
 const btnVaciar = document.getElementById("vaciar-carrito");
 
